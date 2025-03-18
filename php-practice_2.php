@@ -5,13 +5,13 @@ for ($num=1; $num <=100; $num++) {
 
 if (($num % 4 === 0) && ($num % 5 === 0)){
     echo 'tic-tac'."\n";
-}elseif ($num % 5 === 0){
-    echo 'tac'."\n";
-}elseif ($num % 4 === 0){
-    echo 'tic'."\n";
-}else {
-    echo"$num"."\n";
-}
+  } elseif ($num % 5 === 0){
+      echo 'tac'."\n";
+  } elseif ($num % 4 === 0){
+      echo 'tic'."\n";
+  } else {
+      echo"$num"."\n";
+  }
 }
 
 // Q2 多次元連想配列
@@ -68,9 +68,9 @@ class Student
         $this->studentName = $name;
     }
 
-    public function attend()
+    public function attend($language)
     {
-        echo $this->studentName.'はPHPの授業に参加しました。学籍番号:'.$this->studentId;
+        echo $this->studentName.'は'.$language.'の授業に参加しました。学籍番号:'.$this->studentId;
     }
     
     public function sayHi()
